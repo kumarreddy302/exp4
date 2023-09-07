@@ -1,0 +1,26 @@
+<!DOCTYPE html5>
+<html>
+    <title>Taylor's Content</title>
+    <head><center><h1>Taylor's Content</h1></center></head>
+    <p>Enter your age</p>
+    <!--<form id="age">-->
+    <input type="text" id="age1" name="ageq"></input>
+    <button type="button" onclick="opera()">Submit</button> 
+    <p id="error"></p>
+    <!--</form>-->
+    <script>
+        function opera()
+        {   
+            var x = document.getElementsByName("ageq")[0].value;
+            let y = Number(x);           
+            if(y>=18)
+            {
+                location.href="taylor.html";
+            }
+            else
+            {
+                document.getElementsByClassName("error").innerHTML="Sorry You are not eligible";
+            }
+        }
+    </script>
+</html>
